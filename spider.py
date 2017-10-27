@@ -52,7 +52,7 @@ class Spider(object):
             #     continue
             page_url = '%s%s' % (self.BaseUrl, page)
             title_name = self.article_title_dict.get(page)
-            print '正在爬取%s的内容' % title_name
+            print '正在爬取 %s 的内容' % title_name
             page_content = self.get_request_for_url(page_url)
             page_soup = BeautifulSoup(page_content)
             content_doc = page_soup.find("div", id="content")
